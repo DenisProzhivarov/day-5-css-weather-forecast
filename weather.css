@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	transition: all .1s ease-in;
 }
 
 
@@ -13,21 +14,9 @@ body {
 }
 
 .container {
-	margin-left: 300px;
-}
-/* footer,
-header {
-	width: 60%;
-	margin: 0 auto;
-}
- */
-main,
-header,
-footer
- {
-	width: 75%;
-	margin: 0;
 	max-width: 800px;
+	width: 75%;
+	margin: 0 auto;
 }
 
 h1{
@@ -44,6 +33,7 @@ ul {
 	font-size: 0;
 	padding: 0;
 	border: 2px solid #fff;
+
 }
 
 li {
@@ -52,10 +42,10 @@ li {
 	width: 100%;
 	border: 2px solid white;
 	text-align: center;
+	vertical-align: middle;
 	padding: 10px;
+	padding-top:18px;
 	height: 16vh;
-	padding-top: 18px;
-	
 }
 
 .sm
@@ -150,9 +140,36 @@ ul:hover li:not(:hover){
 
 span {
 	display: block;
-	padding-top: 5px;
+	padding-top: 10px;
 	opacity: 0.5;
 }
 
 
+@media screen and (max-width: 576px) {
+	.sm {
+		width:  100%;
+	}
+
+	.md {
+		width: 100%;
+	}
+
+}
+
+/* если начинаем писать сначало с мобильной версии, 
+то убиоаем кдассы sm и md выше тега @media  и пишем 
+
+
+@media screen and (min-width: 576px) {
+	.sm {
+		width:  100%;
+	}
+
+	.md {
+		width: 100%;
+	}
+
+}
+
+ */
 
