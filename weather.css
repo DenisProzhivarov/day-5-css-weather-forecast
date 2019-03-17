@@ -11,41 +11,48 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	color: white;
+	vertical-align: middle;
 }
 
 .container {
 	max-width: 800px;
 	width: 75%;
+	/* min-height: 100vh; */
 	margin: 0 auto;
 }
 
 h1{
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: normal;
+	padding: 3px 0;
 }
 
 h2{
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: normal;
+	padding: 3px 0;
+	
 }
 
 ul {
 	font-size: 0;
 	padding: 0;
+	margin: 0;
 	border: 2px solid #fff;
+	background: #fff;
 
 }
 
 li {
-	font-size: 18px;
+	font-size: 25px;
 	display: inline-block;
 	width: 100%;
 	border: 2px solid white;
 	text-align: center;
-	vertical-align: middle;
-	padding: 10px;
-	padding-top:18px;
-	height: 16vh;
+	/* vertical-align: middle; */
+	padding: 15px 10px;
+	/* padding-top:18px; */
+	/* height: 15vh; */
 }
 
 .sm
@@ -114,7 +121,7 @@ li {
 }
 
 .wi-celsius {
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .wi-night-hail,
@@ -127,25 +134,44 @@ li {
 .wi-night-clear,
 .wi-night-cloudy
 {
-	font-size: 25px;
+	font-size: 35px;
 }
 
-li, span, i{
+li{
+	display: inline-block;
 	vertical-align: middle;
 }
 
-ul:hover li:not(:hover){
+span, i{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ /*1 вариант */
+
+/* ul:hover li:not(:hover){ 
 	opacity: 0.6;	
+} */
+
+/* 2 вариант */
+
+ul:hover > li {
+	opacity: 0.6;
+}
+
+ul li:hover {
+	opacity: 1;
 }
 
 span {
-	display: block;
-	padding-top: 10px;
+	/* display: block; */
+	/* padding-top: 10px; */
+	margin-top: 15px;
 	opacity: 0.5;
 }
 
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 	.sm {
 		width:  100%;
 	}
@@ -154,22 +180,17 @@ span {
 		width: 100%;
 	}
 
-}
+} */
 
 /* если начинаем писать сначало с мобильной версии, 
 то убиоаем кдассы sm и md выше тега @media  и пишем 
-
-
 @media screen and (min-width: 576px) {
 	.sm {
 		width:  100%;
 	}
-
 	.md {
 		width: 100%;
 	}
-
 }
-
  */
 
